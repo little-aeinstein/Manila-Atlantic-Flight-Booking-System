@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0FAE466-DACB-449A-91A1-CFEF54014427}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ManilaAtlantic.My.MyApplication</StartupObject>
+    <RootNamespace>ManilaAtlantic</RootNamespace>
+    <AssemblyName>ManilaAtlantic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ManilaAtlantic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ManilaAtlantic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAircraft.Designer.vb">
+      <DependentUpon>AddAircraft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddAircraft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocation.Designer.vb">
+      <DependentUpon>AddLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFlight.Designer.vb">
+      <DependentUpon>AddFlight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddFlight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFlight.Designer.vb">
+      <DependentUpon>AdminFlight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFlight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookOrView.Designer.vb">
+      <DependentUpon>BookOrView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookOrView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.vb">
+      <DependentUpon>Cart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFlightInstance.Designer.vb">
+      <DependentUpon>AddFlightInstance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddFlightInstance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndFlightList.Designer.vb">
+      <DependentUpon>EndFlightList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EndFlightList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightList.Designer.vb">
+      <DependentUpon>FlightList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlightList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightType.Designer.vb">
+      <DependentUpon>FlightType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FlightType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C:\Users\earlr\Desktop\LatestTrans.Designer.vb">
+      <DependentUpon>LatestTrans.vb</DependentUpon>
+      <Link>LatestTrans.Designer.vb</Link>
+    </Compile>
+    <Compile Include="C:\Users\earlr\Desktop\LatestTrans.vb">
+      <SubType>Form</SubType>
+      <Link>LatestTrans.vb</Link>
+    </Compile>
+    <Compile Include="GuestInfo.Designer.vb">
+      <DependentUpon>GuestInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GuestInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAircraft.Designer.vb">
+      <DependentUpon>ManageAircraft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAircraft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFlight.Designer.vb">
+      <DependentUpon>ManageFlight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFlight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFlightInstance.Designer.vb">
+      <DependentUpon>ManageFlightInstance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFlightInstance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PassList.Designer.vb">
+      <DependentUpon>PassList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassRep.Designer.vb">
+      <DependentUpon>PassRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PassRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLocation.Designer.vb">
+      <DependentUpon>ManageLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMultiCity.Designer.vb">
+      <DependentUpon>SearchMultiCity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMultiCity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOneWay.Designer.vb">
+      <DependentUpon>SearchOneWay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOneWay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchRoundTrip.Designer.vb">
+      <DependentUpon>SearchRoundTrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRoundTrip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectMultiCity.Designer.vb">
+      <DependentUpon>SelectMultiCity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectMultiCity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectOneWay.Designer.vb">
+      <DependentUpon>SelectOneWay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectOneWay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectRound.Designer.vb">
+      <DependentUpon>SelectRound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectRound.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Summary.Designer.vb">
+      <DependentUpon>Summary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddAircraft.resx">
+      <DependentUpon>AddAircraft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLocation.resx">
+      <DependentUpon>AddLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFlight.resx">
+      <DependentUpon>AddFlight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFlight.resx">
+      <DependentUpon>AdminFlight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookOrView.resx">
+      <DependentUpon>BookOrView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFlightInstance.resx">
+      <DependentUpon>AddFlightInstance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndFlightList.resx">
+      <DependentUpon>EndFlightList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightList.resx">
+      <DependentUpon>FlightList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightType.resx">
+      <DependentUpon>FlightType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C:\Users\earlr\Desktop\LatestTrans.resx">
+      <DependentUpon>LatestTrans.vb</DependentUpon>
+      <Link>LatestTrans.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuestInfo.resx">
+      <DependentUpon>GuestInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAircraft.resx">
+      <DependentUpon>ManageAircraft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFlight.resx">
+      <DependentUpon>ManageFlight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFlightInstance.resx">
+      <DependentUpon>ManageFlightInstance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassList.resx">
+      <DependentUpon>PassList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassRep.resx">
+      <DependentUpon>PassRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLocation.resx">
+      <DependentUpon>ManageLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMultiCity.resx">
+      <DependentUpon>SearchMultiCity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchOneWay.resx">
+      <DependentUpon>SearchOneWay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchRoundTrip.resx">
+      <DependentUpon>SearchRoundTrip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectMultiCity.resx">
+      <DependentUpon>SelectMultiCity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectOneWay.resx">
+      <DependentUpon>SelectOneWay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectRound.resx">
+      <DependentUpon>SelectRound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summary.resx">
+      <DependentUpon>Summary.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
